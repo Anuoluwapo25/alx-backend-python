@@ -1,8 +1,10 @@
 """ async_comprehension """
 
+
 import time
 import asyncio
 from typing import List
+
 
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
