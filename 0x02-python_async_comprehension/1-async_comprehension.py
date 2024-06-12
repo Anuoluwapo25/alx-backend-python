@@ -14,7 +14,5 @@ async def async_comprehension() -> Generator[float, None, None]:
     Args: lists
     Returns: coroutine list of float
     """
-    result: List[float] = []
-    async for i in async_generator():
-        result.append(i)
-    return result
+    num_list = [i async for i in async_generator()]
+    return num_list
